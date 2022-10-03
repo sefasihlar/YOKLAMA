@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EntityLayer.Concrete
+namespace DataAccessLayer.Abstract
 {
-    internal class TB_MESAJ_PATH
+    internal interface IDonemDal
     {
     }
 }

@@ -37,7 +37,7 @@ namespace EntityLayer.Concrete
         public virtual ICollection<TBL_TRY_CATCH> TBL_TRY_CATCH { get; set; }
         public virtual ICollection<TBL_VELI> TBL_VELI { get; set; }
         public virtual ICollection<TBL_YOKLAMA_HAREKETLERI> TBL_YOKLAMA_HAREKETLERI { get; set; }
-        public virtual ICollection<TB_MESAJ_PATH> MESAJ_PATH { get; set; }
+        public virtual ICollection<TBL_MESAJ_PATH> MESAJ_PATH { get; set; }
 
     }
 }

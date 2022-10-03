@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "9IhY09DTDCf++YGnR6AOZHItN8YnojuVxk8uCiAgoUsp9laY/93IQWthh6Ala7sTyBIMfqhLI2VCaE0AdFRj0A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ayyıldız\\Desktop\\YoklamaProjesi\\Yoklama\\DataAccessLayer\\DataAccessLayer.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\ayyıldız\\Desktop\\YoklamaProjesi\\Yoklama\\DataAccessLayer\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
+}

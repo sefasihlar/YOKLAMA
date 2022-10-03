@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "y3Tf4aFOkLjEg7wmYnvPoVQZTEpzlJr9V5Jn3BHOlFTUoLqJe1rDFtVhsYj8L3R3joNSGM5NmaYg6Md2WDnLiQ==",
+  "dgSpecHash": "CJVT4AZm//176P/Vh/Tvft3ctkG24+bJFL/teQhqDMTB5VKIiH1z8RM+QARH9hPri/EfO7fb/4oTvI6rkAgbag==",
   "success": true,
   "projectFilePath": "C:\\Users\\ayyıldız\\Desktop\\YoklamaProjesi\\Yoklama\\BusinessLayer\\BusinessLayer.csproj",
   "expectedPackageFiles": [
@@ -173,12 +173,5 @@
     "C:\\Users\\ayyıldız\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\ayyıldız\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\ayyıldız\\Desktop\\YoklamaProjesi\\Yoklama\\BusinessLayer\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }

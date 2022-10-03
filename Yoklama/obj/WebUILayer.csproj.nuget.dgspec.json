@@ -89,7 +89,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\ayyıldız\\Desktop\\YoklamaProjesi\\Yoklama\\EntityLayer\\EntityLayer.csproj": {
+                "projectPath": "C:\\Users\\ayyıldız\\Desktop\\YoklamaProjesi\\Yoklama\\EntityLayer\\EntityLayer.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

@@ -1,15 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vWFBCaSiHyhgyEmZr6e3NSfnecXhyxesyTpw9q03RHusQV2lZGzhipBYYxvQ7fffbKjkU3VLN9Ok6pwdsSA83g==",
+  "dgSpecHash": "PhA+pORzQiy45MsEmH7zMEaTCNAPjl37f7+t2W1vz1FxBIpg14x9RUkNZSo9zKa+wxPeXCmL/oqApFnjv0LVvw==",
   "success": true,
   "projectFilePath": "C:\\Users\\ayyıldız\\Desktop\\YoklamaProjesi\\Yoklama\\BusinessLayer\\BusinessLayer.csproj",
   "expectedPackageFiles": [],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\ayyıldız\\Desktop\\YoklamaProjesi\\Yoklama\\BusinessLayer\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }

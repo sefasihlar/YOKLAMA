@@ -1,11 +1,46 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "DataAccessLayer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/DataAccessLayer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DataAccessLayer.dll": {}
+        }
+      },
+      "EntityLayer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/EntityLayer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EntityLayer.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "DataAccessLayer/1.0.0": {
+      "type": "project",
+      "path": "../DataAccessLayer/DataAccessLayer.csproj",
+      "msbuildProject": "../DataAccessLayer/DataAccessLayer.csproj"
+    },
+    "EntityLayer/1.0.0": {
+      "type": "project",
+      "path": "../EntityLayer/EntityLayer.csproj",
+      "msbuildProject": "../EntityLayer/EntityLayer.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "DataAccessLayer >= 1.0.0",
+      "EntityLayer >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\ayyıldız\\.nuget\\packages\\": {}
@@ -33,7 +68,14 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\ayyıldız\\Desktop\\YoklamaProjesi\\Yoklama\\DataAccessLayer\\DataAccessLayer.csproj": {
+              "projectPath": "C:\\Users\\ayyıldız\\Desktop\\YoklamaProjesi\\Yoklama\\DataAccessLayer\\DataAccessLayer.csproj"
+            },
+            "C:\\Users\\ayyıldız\\Desktop\\YoklamaProjesi\\Yoklama\\EntityLayer\\EntityLayer.csproj": {
+              "projectPath": "C:\\Users\\ayyıldız\\Desktop\\YoklamaProjesi\\Yoklama\\EntityLayer\\EntityLayer.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -64,13 +106,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\ayyıldız\\Desktop\\YoklamaProjesi\\Yoklama\\BusinessLayer\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }

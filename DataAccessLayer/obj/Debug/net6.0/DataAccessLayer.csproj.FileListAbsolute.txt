@@ -1,0 +1,17 @@
+C:\Users\ayyıldız\Desktop\YoklamaProjesi\Yoklama\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\ayyıldız\Desktop\YoklamaProjesi\Yoklama\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ayyıldız\Desktop\YoklamaProjesi\Yoklama\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.AssemblyInfoInputs.cache
+C:\Users\ayyıldız\Desktop\YoklamaProjesi\Yoklama\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.AssemblyInfo.cs
+C:\Users\ayyıldız\Desktop\YoklamaProjesi\Yoklama\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\ayyıldız\Desktop\YoklamaProjesi\Yoklama\DataAccessLayer\bin\Debug\net6.0\DataAccessLayer.deps.json
+C:\Users\ayyıldız\Desktop\YoklamaProjesi\Yoklama\DataAccessLayer\bin\Debug\net6.0\DataAccessLayer.runtimeconfig.json
+C:\Users\ayyıldız\Desktop\YoklamaProjesi\Yoklama\DataAccessLayer\bin\Debug\net6.0\DataAccessLayer.dll
+C:\Users\ayyıldız\Desktop\YoklamaProjesi\Yoklama\DataAccessLayer\bin\Debug\net6.0\DataAccessLayer.pdb
+C:\Users\ayyıldız\Desktop\YoklamaProjesi\Yoklama\DataAccessLayer\bin\Debug\net6.0\EntityLayer.dll
+C:\Users\ayyıldız\Desktop\YoklamaProjesi\Yoklama\DataAccessLayer\bin\Debug\net6.0\EntityLayer.pdb
+C:\Users\ayyıldız\Desktop\YoklamaProjesi\Yoklama\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.csproj.CopyComplete
+C:\Users\ayyıldız\Desktop\YoklamaProjesi\Yoklama\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.dll
+C:\Users\ayyıldız\Desktop\YoklamaProjesi\Yoklama\DataAccessLayer\obj\Debug\net6.0\refint\DataAccessLayer.dll
+C:\Users\ayyıldız\Desktop\YoklamaProjesi\Yoklama\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.pdb
+C:\Users\ayyıldız\Desktop\YoklamaProjesi\Yoklama\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.genruntimeconfig.cache
+C:\Users\ayyıldız\Desktop\YoklamaProjesi\Yoklama\DataAccessLayer\obj\Debug\net6.0\ref\DataAccessLayer.dll

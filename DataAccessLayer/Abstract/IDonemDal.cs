@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Abstract
 {
-    public interface IDonemDal:IGenericDal<TBL_BOLUM>
+    public interface IDonemDal:IGenericDal<TBL_DONEM>
     {
     }
 }

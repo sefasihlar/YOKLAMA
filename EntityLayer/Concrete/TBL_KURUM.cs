@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Runtime;
 using System.Text;
@@ -9,6 +10,7 @@ namespace EntityLayer.Concrete
 {
     public class TBL_KURUM
     {
+        [Key]
         public int KURUM_ID { get; set; }
         public string KURUM_ADI { get; set; }
         public string KURUM_LISANS { get; set; }
@@ -18,6 +20,8 @@ namespace EntityLayer.Concrete
         public int SCHOOL_ID { get; set; }
         public string OZEL_KOD { get; set; }
 
-        public virtual TBL_SCHOOL_DURUMLARI TBL_SCHOOL_DURUMLARI { get; set; }
+
+
+
     }
 }

@@ -558,3 +558,4 @@ C:\Users\ayyıldız\Desktop\YoklamaProjesi\Yoklama\Yoklama\bin\Debug\net6.0\Enti
 C:\Users\ayyıldız\Desktop\YoklamaProjesi\Yoklama\Yoklama\bin\Debug\net6.0\BusinessLayer.pdb
 C:\Users\ayyıldız\Desktop\YoklamaProjesi\Yoklama\Yoklama\bin\Debug\net6.0\DataAccessLayer.pdb
 C:\Users\ayyıldız\Desktop\YoklamaProjesi\Yoklama\Yoklama\bin\Debug\net6.0\EntityLayer.pdb
+C:\Users\ayyıldız\Desktop\YoklamaProjesi\Yoklama\Yoklama\obj\Debug\net6.0\WebUILayer.MvcApplicationPartsAssemblyInfo.cs

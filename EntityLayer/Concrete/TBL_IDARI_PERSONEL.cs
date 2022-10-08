@@ -1,6 +1,7 @@
 ﻿
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,6 +10,7 @@ namespace EntityLayer.Concrete
 {
     public class TBL_IDARI_PERSONEL
     {
+        [Key]
         public int IDARI_PERSONEL_ID { get; set; }
         public string ADI { get; set; }
         public string SOYADI { get; set; }
@@ -20,11 +22,9 @@ namespace EntityLayer.Concrete
         public int SCHOOL_ID { get; set; }
         public string OZEL_KOD { get; set; }
 
-        public virtual ICollection<TBL_DERS_PROGRAMI> TBL_DERS_PROGRAMI { get; set; }
-        public virtual ICollection<TBL_DERS_PROGRAMI> TBL_DERS_PROGRAMI1 { get; set; }
-        public virtual ICollection<TBL_DONEM> TBL_DONEM { get; set; }
-        public virtual TBL_SCHOOL_DURUMLARI TBL_SCHOOL_DURUMLARI { get; set; }
-        public virtual ICollection<TBL_OGRENCI> TBL_OGRENCI { get; set; }
-        public virtual ICollection<TBL_VELI> TBL_VELI { get; set; }
+
+
     }
 }
+
+

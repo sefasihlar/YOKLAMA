@@ -1,4 +1,5 @@
 ﻿using BusinessLayer.Abstract;
+using DataAccessLayer.Abstract;
 using EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
@@ -10,6 +11,13 @@ namespace BusinessLayer.Concrete
 {
     public class SchoolDurumlariManager : ISchoolDurumlariService
     {
+        ISchoolDurumlarıDal _schoolDurumlarıDal;
+
+        public SchoolDurumlariManager(ISchoolDurumlarıDal schoolDurumlarıDal)
+        {
+            this._schoolDurumlarıDal = schoolDurumlarıDal;
+        }
+
         public void Add(TBL_SCHOOL_DURUMLARI schooldurumlari)
         {
             throw new NotImplementedException();
@@ -22,7 +30,7 @@ namespace BusinessLayer.Concrete
 
         public List<TBL_SCHOOL_DURUMLARI> GetList()
         {
-            throw new NotImplementedException();
+            return _schoolDurumlarıDal.GetListAll();
         }
 
         public void Remove(TBL_SCHOOL_DURUMLARI schooldurumlari)

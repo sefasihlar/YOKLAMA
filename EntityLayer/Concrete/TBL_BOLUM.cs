@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Reflection.Metadata.Ecma335;
 using System.Text;
@@ -9,13 +11,11 @@ namespace EntityLayer.Concrete
 {
     public class TBL_BOLUM
     {
+        [Key]
         public int BOLUM_ID  { get; set; }
-        public string ADI  { get; set; }
+        public string? ADI  { get; set; }
         public bool DURUM { get; set; }
-        public int SCHOOL_ID { get; set; }
-        public string OZEL_KOD { get; set; }
+        public string? OZEL_KOD { get; set; }
 
-        public virtual TBL_SCHOOL_DURUMLARI TBL_SCHOOL_DURUMLARI { get; set; }
-        public virtual ICollection<TBL_OGRENCI> TBL_OGRENCI { get; set; }
     }
 }

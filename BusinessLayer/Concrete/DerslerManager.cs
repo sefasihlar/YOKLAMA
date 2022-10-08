@@ -1,4 +1,5 @@
 ﻿using BusinessLayer.Abstract;
+using DataAccessLayer.Abstract;
 using EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
@@ -10,6 +11,13 @@ namespace BusinessLayer.Concrete
 {
     public class DerslerManager : IDerslerService
     {
+        IDerslerDal _derslerDal;
+
+        public DerslerManager(IDerslerDal derslerDal)
+        {
+            _derslerDal = derslerDal;
+        }
+
         public void Add(TBL_DERSLER dersler)
         {
             throw new NotImplementedException();
@@ -22,7 +30,7 @@ namespace BusinessLayer.Concrete
 
         public List<TBL_DERSLER> GetList()
         {
-            throw new NotImplementedException();
+            return _derslerDal.GetListAll();
         }
 
         public void Remove(TBL_DERSLER dersler)

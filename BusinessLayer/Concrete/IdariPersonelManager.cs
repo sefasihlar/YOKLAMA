@@ -1,4 +1,5 @@
 ﻿using BusinessLayer.Abstract;
+using DataAccessLayer.Abstract;
 using EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
@@ -10,6 +11,13 @@ namespace BusinessLayer.Concrete
 {
     public class IdariPersonelManager : IIdariPersonelService
     {
+        IIdariPersonelDal _IdariPersonelDal;
+
+        public IdariPersonelManager(IIdariPersonelDal ıdariPersonelDal)
+        {
+            _IdariPersonelDal = ıdariPersonelDal;
+        }
+
         public void Add(TBL_IDARI_PERSONEL idaripersonel)
         {
             throw new NotImplementedException();
@@ -22,7 +30,7 @@ namespace BusinessLayer.Concrete
 
         public List<TBL_IDARI_PERSONEL> GetList()
         {
-            throw new NotImplementedException();
+            return _IdariPersonelDal.GetListAll();
         }
 
         public void Remove(TBL_IDARI_PERSONEL idaripersonel)

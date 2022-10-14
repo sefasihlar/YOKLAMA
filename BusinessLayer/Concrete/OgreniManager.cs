@@ -1,11 +1,6 @@
 ﻿using BusinessLayer.Abstract;
 using DataAccessLayer.Abstract;
 using EntityLayer.Concrete;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BusinessLayer.Concrete
 {
@@ -35,7 +30,7 @@ namespace BusinessLayer.Concrete
 
         public List<TBL_OGRENCI> GetList()
         {
-           return _ogrenciDal.GetListAll();
+            return _ogrenciDal.GetListAll();
         }
 
         public void Remove(TBL_OGRENCI ogrenci)

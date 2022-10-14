@@ -15,7 +15,7 @@ namespace WebUILayer.Controllers
             DersManager ip = new DersManager(new EfDersRepository());
             var values = ip.DersList();
             return View(values);
-    
+
         }
     }
 }

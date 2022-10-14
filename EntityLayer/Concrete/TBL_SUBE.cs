@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace EntityLayer.Concrete
 {
@@ -16,7 +11,7 @@ namespace EntityLayer.Concrete
         public int SCHOOL_ID { get; set; }
         public string OZEL_KOD { get; set; }
 
-  
+
 
     }
 }

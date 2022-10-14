@@ -1,9 +1,4 @@
 ﻿using EntityLayer.Concrete;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BusinessLayer.Abstract
 {
@@ -15,7 +10,7 @@ namespace BusinessLayer.Abstract
 
         List<TBL_DERS_PROGRAMI> GetList();
 
-        TBL_DERS_PROGRAMI GetById(int id);  
+        TBL_DERS_PROGRAMI GetById(int id);
 
     }
 }

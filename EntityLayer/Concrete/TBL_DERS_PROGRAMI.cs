@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Runtime;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace EntityLayer.Concrete
 {
@@ -25,14 +19,14 @@ namespace EntityLayer.Concrete
         [ForeignKey("TBL_IDARI_PERSONEL")]
         public int OGERETMEN_ID { get; set; }
         public virtual TBL_IDARI_PERSONEL? TBL_IDARI_PERSONEL { get; set; }
-        
+
         [ForeignKey("TBL_DONEM")]
         public int DONEM_ID { get; set; }
         public virtual TBL_DONEM? TBL_DONEM { get; set; }
 
         [ForeignKey("TBL_DERS")]
         public int DERS_ID { get; set; }
-        public virtual  TBL_DERS? TBL_DERS { get; set; }
+        public virtual TBL_DERS? TBL_DERS { get; set; }
 
         [ForeignKey("TBL_SINIF")]
         public int SINIF_ID { get; set; }

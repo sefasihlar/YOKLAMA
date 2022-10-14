@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace EntityLayer.Concrete
 {
@@ -32,7 +27,7 @@ namespace EntityLayer.Concrete
 
         [ForeignKey("TBL_DONEM")]
         public int DONEM_ID { get; set; }
-        public virtual TBL_DONEM?  TBL_DONEM{ get; set; }
+        public virtual TBL_DONEM? TBL_DONEM { get; set; }
 
         [ForeignKey("TBL_SCHOOL_DURUMLARI")]
         public int SCHOOL_ID { get; set; }

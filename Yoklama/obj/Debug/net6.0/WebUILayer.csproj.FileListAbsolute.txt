@@ -119,7 +119,6 @@ C:\Users\ayyıldız\Desktop\YoklamaProjesi\Yoklama\Yoklama\bin\Debug\net6.0\refs
 C:\Users\ayyıldız\Desktop\YoklamaProjesi\Yoklama\Yoklama\bin\Debug\net6.0\refs\Microsoft.Extensions.Configuration.UserSecrets.dll
 C:\Users\ayyıldız\Desktop\YoklamaProjesi\Yoklama\Yoklama\bin\Debug\net6.0\refs\Microsoft.Extensions.Configuration.Xml.dll
 C:\Users\ayyıldız\Desktop\YoklamaProjesi\Yoklama\Yoklama\bin\Debug\net6.0\refs\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-C:\Users\ayyıldız\Desktop\YoklamaProjesi\Yoklama\Yoklama\bin\Debug\net6.0\refs\Microsoft.Extensions.DependencyInjection.dll
 C:\Users\ayyıldız\Desktop\YoklamaProjesi\Yoklama\Yoklama\bin\Debug\net6.0\refs\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
 C:\Users\ayyıldız\Desktop\YoklamaProjesi\Yoklama\Yoklama\bin\Debug\net6.0\refs\Microsoft.Extensions.Diagnostics.HealthChecks.dll
 C:\Users\ayyıldız\Desktop\YoklamaProjesi\Yoklama\Yoklama\bin\Debug\net6.0\refs\Microsoft.Extensions.Features.dll
@@ -559,3 +558,8 @@ C:\Users\ayyıldız\Desktop\YoklamaProjesi\Yoklama\Yoklama\bin\Debug\net6.0\Busi
 C:\Users\ayyıldız\Desktop\YoklamaProjesi\Yoklama\Yoklama\bin\Debug\net6.0\DataAccessLayer.pdb
 C:\Users\ayyıldız\Desktop\YoklamaProjesi\Yoklama\Yoklama\bin\Debug\net6.0\EntityLayer.pdb
 C:\Users\ayyıldız\Desktop\YoklamaProjesi\Yoklama\Yoklama\obj\Debug\net6.0\WebUILayer.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\ayyıldız\Desktop\YoklamaProjesi\Yoklama\Yoklama\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\ayyıldız\Desktop\YoklamaProjesi\Yoklama\Yoklama\bin\Debug\net6.0\refs\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\ayyıldız\Desktop\YoklamaProjesi\Yoklama\Yoklama\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\ayyıldız\Desktop\YoklamaProjesi\Yoklama\Yoklama\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\ayyıldız\Desktop\YoklamaProjesi\Yoklama\Yoklama\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll

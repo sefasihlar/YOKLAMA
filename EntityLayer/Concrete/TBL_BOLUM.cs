@@ -1,19 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Reflection.Metadata.Ecma335;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace EntityLayer.Concrete
 {
     public class TBL_BOLUM
     {
         [Key]
-        public int BOLUM_ID  { get; set; }
-        public string? ADI  { get; set; }
+        public int BOLUM_ID { get; set; }
+        public string? ADI { get; set; }
         public bool DURUM { get; set; }
         public string? OZEL_KOD { get; set; }
 

@@ -6,5 +6,6 @@ namespace DataAccessLayer.EntityFramework
 {
     public class EfBolumRepository : GenericRepository<TBL_BOLUM>, IBolumDal
     {
+
     }
 }

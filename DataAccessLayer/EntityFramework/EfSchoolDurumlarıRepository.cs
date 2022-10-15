@@ -6,5 +6,6 @@ namespace DataAccessLayer.EntityFramework
 {
     public class EfSchoolDurumlarıRepository : GenericRepository<TBL_SCHOOL_DURUMLARI>, ISchoolDurumlarıDal
     {
+ 
     }
 }

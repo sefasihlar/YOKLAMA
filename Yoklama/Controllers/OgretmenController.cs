@@ -16,5 +16,7 @@ namespace WebUILayer.Controllers
             var values = ip.GetList();
             return View(values);
         }
+
+
     }
 }

@@ -36,7 +36,14 @@ namespace WebUILayer.Controllers
             return RedirectToAction("AllList","Ogretmen");
         }
 
-   
+        
+        public IActionResult PersonelDelete(int  id)
+        {
+            var ogretmen = ip.GetById(id);
+            ip.Remove(ogretmen);
+            return RedirectToAction("AllList","Ogretmen");
+        }
+
         public IActionResult PersonelDetail(int id)
         {
             var values = ip.GetWithPersonelId(id);

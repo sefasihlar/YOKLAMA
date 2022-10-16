@@ -21,7 +21,7 @@ namespace BusinessLayer.Concrete
 
         public TBL_IDARI_PERSONEL GetById(int id)
         {
-            throw new NotImplementedException();
+            return _IdariPersonelDal.GetById(id);
         }
 
         public List<TBL_IDARI_PERSONEL> GetWithPersonelId(int id)

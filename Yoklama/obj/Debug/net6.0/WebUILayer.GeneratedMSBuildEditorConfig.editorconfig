@@ -43,12 +43,28 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2dyZW5jaVxBbGxMaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/ayyıldız/Desktop/YoklamaProjesi/Yoklama/Yoklama/Views/Ogrenci/OgrenciDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2dyZW5jaVxPZ3JlbmNpRGV0YWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/ayyıldız/Desktop/YoklamaProjesi/Yoklama/Yoklama/Views/Ogretmen/AllList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2dyZXRtZW5cQWxsTGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/ayyıldız/Desktop/YoklamaProjesi/Yoklama/Yoklama/Views/Ogretmen/OgretmenAdd.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2dyZXRtZW5cT2dyZXRtZW5BZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ayyıldız/Desktop/YoklamaProjesi/Yoklama/Yoklama/Views/Ogretmen/PersonelDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2dyZXRtZW5cUGVyc29uZWxEZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/ayyıldız/Desktop/YoklamaProjesi/Yoklama/Yoklama/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ayyıldız/Desktop/YoklamaProjesi/Yoklama/Yoklama/Views/Shared/PartialOgretmen/AddPersonel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFBhcnRpYWxPZ3JldG1lblxBZGRQZXJzb25lbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/ayyıldız/Desktop/YoklamaProjesi/Yoklama/Yoklama/Views/Shared/_AdminLayout.cshtml]

@@ -1,0 +1,23 @@
+﻿<form asp-action="OgretmenAdd" asp-controller="Ogretmen" method="post">
+    <div class="mb-3">
+        <label for="name" class="form-label">Full Name</label>
+        <input type="text" class="form-control" placeholder="Enter full name" name="ADI">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" placeholder="Enter email" name="SOYADI">
+    </div>
+    <div class="mb-3">
+        <label for="position" class="form-label">Phone</label>
+        <input type="text" class="form-control" placeholder="Enter phone number" name="UNVAN">
+    </div>
+    <div class="mb-3">
+        <label for="category" class="form-label">Location</label>
+        <input type="text" class="form-control" placeholder="Enter Location" name="DURUM">
+    </div>
+
+    <div class="text-end">
+        <button type="submit" class="btn btn-success waves-effect waves-light">Save</button>
+        <button type="button" class="btn btn-danger waves-effect waves-light" data-bs-dismiss="modal">Continue</button>
+    </div>
+</form>

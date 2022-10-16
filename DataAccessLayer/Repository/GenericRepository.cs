@@ -1,4 +1,6 @@
 ﻿using DataAccessLayer.Abstract;
+using System.Linq.Expressions;
+using System.Security.Cryptography.Pkcs;
 
 namespace DataAccessLayer.Repository
 {
@@ -22,9 +24,18 @@ namespace DataAccessLayer.Repository
             return _contex.Set<T>().Find(id);
         }
 
+
+        
+
         public List<T> GetListAll()
         {
             return _contex.Set<T>().ToList();
+        }
+
+        public List<T> GetListAll(Expression<Func<T, bool>> filter)
+        {
+
+            return _contex.Set<T>().Where(filter).ToList();
         }
 
         public void Update(T entity)

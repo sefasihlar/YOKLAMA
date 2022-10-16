@@ -6,6 +6,7 @@ namespace WebUILayer.Controllers
 {
     public class OgrenciController : Controller
     {
+        OgreniManager ip = new OgreniManager(new EfOgrenciRepository());
         public IActionResult Index()
         {
             return View();
@@ -13,8 +14,14 @@ namespace WebUILayer.Controllers
 
         public IActionResult AllList()
         {
-            OgreniManager ip = new OgreniManager(new EfOgrenciRepository());
+            
             var values = ip.GetberaberList();
+            return View(values);
+        }
+
+        public IActionResult OgrenciDetail(int id)
+        {
+            var values = ip.GetWithOgrenciId(id);
             return View(values);
         }
     }

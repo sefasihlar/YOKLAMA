@@ -1,0 +1,160 @@
+﻿@model IEnumerable<EntityLayer.Concrete.TBL_OGRENCI>
+@{
+    ViewData["Title"] = "OgrenciDetail";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<!-- start page title -->
+<!-- start page title -->
+<div class="row">
+    <div class="col-12">
+        <div class="page-title-box">
+            <div class="page-title-left">
+                <ol class="breadcrumb m-0">
+                    <li class="breadcrumb-item"><a href="javascript: void(0);">Ogrenciler</a></li>
+                    <li class="breadcrumb-item active">Ogrenci Detay</li>
+                </ol>
+            </div>
+            <h4 class="page-title">Ogrenci Detail</h4>
+        </div>
+    </div>
+</div>
+<!-- end page title -->
+@foreach (var item in Model)
+{
+
+    <div class="row">
+        <div class="col-xl-12 col-lg-12">
+            <!-- project card -->
+            <div class="card d-block">
+                <div class="card-body">
+
+                    <div class="float-sm-end mb-2 mb-sm-0">
+                        <div class="row g-2">
+                            <div class="col-auto">
+                                <a href="tickets-list.html" class="btn btn-sm btn-link"><i class="mdi mdi-keyboard-backspace"></i> Back</a>
+                            </div>
+                            <div class="col-auto">
+                                <select class="form-select form-select-sm form">
+                                    <option selected="">Watch</option>
+                                    <option value="1">Remind me</option>
+                                    <option value="2">Close</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div> <!-- end dropdown-->
+
+                    <h4 class="mb-3 mt-0 font-18">Payout not received since last 3 months</h4>
+
+                    <div class="clerfix"></div>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <!-- Ticket type -->
+                            <label class="mt-2 mb-1">Unvan:</label>
+                            <p>
+                                <i class='mdi mdi-ticket font-18 text-success me-1 align-middle'></i> Öğrenci
+                            </p>
+                            <!-- end Ticket Type -->
+                        </div>
+                    </div> <!-- end row -->
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <!-- Reported by -->
+                            <label class="mt-2 mb-1">Öğrenci Bilgileri :</label>
+                            <div class="d-flex align-items-start">
+                                <img src="\template\assets\images\users\/user-9.jpg"
+                                 class="rounded-circle me-2" height="24" />
+                                <div class="w-100">
+                                    <p>TC:@item.VATADANDAS_NO</p>
+                                    <p>ADI-SOYADI:@item.ADI @item.SOYADI</p>
+                                    <p>SINIF: @item.SINIF</p>
+                                    <p>ŞUBE: @item.SUBE</p>
+                                    <p>BOLUM: @item.BOLUM_ID</p>
+                                    <p>TELEFON: @item.TELEFON</p>
+                                    <p>MAİL: @item.MAIL</p>
+                                    <p>OKUDUĞU-DONEM: @item.DONEM_ID</p>
+                                    <p>DURUM:@item.DURUM </p>
+                                    <p>VELİSİ:@item.USER_ID </p>
+                                    <p>KOD:@item.OZEL_KOD </p>
+                                </div>
+                            </div>
+                            <!-- end Reported by -->
+                        </div> <!-- end col -->
+
+                        <div class="col-md-6">
+                            <!-- assignee -->
+                            <label class="mt-2 mb-1">Assigned To :</label>
+                            <div class="d-flex align-items-start">
+                                <img src="\template\assets\images\users\user-2.jpg" alt="Arya S"
+                                 class="rounded-circle me-2" height="24" />
+                                <div class="w-100">
+                                    <p> Thelma Fridley </p>
+                                </div>
+                            </div>
+                            <!-- end assignee -->
+                        </div> <!-- end col -->
+                    </div> <!-- end row -->
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <!-- assignee -->
+                            <label class="mt-2 mb-1">KAYIT TARİHİ:</label>
+                            <p>@item.TARIH PM<small class="text-muted"></small></p>
+                            <!-- end assignee -->
+                        </div> <!-- end col -->
+
+                        <div class="col-md-6">
+                            <!-- assignee -->
+                            <label class="mt-2 mb-1">Updated On :</label>
+                            <p>13 Feb 2020 <small class="text-muted">4:09 PM</small></p>
+                            <!-- end assignee -->
+                        </div> <!-- end col -->
+                    </div> <!-- end row -->
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <!-- Status -->
+                            <label class="mt-2 form-label">Status :</label>
+                            <div class="row">
+                                <div class="col-auto">
+                                    <select class="form-select form-select-sm">
+                                        <option>Open</option>
+                                        <option>Close</option>
+                                        <option>In Progress</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- end Status -->
+                        </div> <!-- end col -->
+
+                        <div class="col-md-6">
+                            <!-- Priority -->
+                            <label class="mt-2 mb-1">Priority :</label>
+                            <div class="row">
+                                <div class="col-auto">
+                                    <select class="form-select form-select-sm">
+                                        <option>Low</option>
+                                        <option selected>Medium</option>
+                                        <option>High</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- end Priority -->
+                        </div> <!-- end col -->
+                    </div> <!-- end row -->
+
+                    <label class="mt-4 mb-1">Overview :</label>
+
+                    <p class="text-muted mb-0">
+                        This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up.
+                    </p>
+
+                </div> <!-- end card-body-->
+
+            </div> <!-- end card-->
+        </div>
+    </div>
+}
+

@@ -33,6 +33,11 @@ namespace BusinessLayer.Concrete
             return _ogrenciDal.GetListAll();
         }
 
+        public List<TBL_OGRENCI> GetWithOgrenciId(int id)
+        {
+            return _ogrenciDal.GetListAll(x=> x.OGRENCI_ID == id);
+        }
+
         public void Remove(TBL_OGRENCI ogrenci)
         {
             throw new NotImplementedException();

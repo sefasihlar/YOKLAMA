@@ -20,6 +20,9 @@ namespace WebUILayer.Controllers
             return View(values);
         }
 
+<<<<<<< HEAD
+
+=======
         [HttpGet]
         public IActionResult OgretmenAdd()
         {
@@ -49,5 +52,6 @@ namespace WebUILayer.Controllers
             var values = ip.GetWithPersonelId(id);
             return View(values);
         }
+>>>>>>> WebUI
     }
 }

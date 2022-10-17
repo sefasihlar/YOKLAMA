@@ -11,7 +11,7 @@ namespace DataAccessLayer.EntityFramework
         {
             using (var c = new Context())
             {
-                return c.TBL_OGRENCI.Include(x => x.TBL_BOLUM).Include(x => x.TBL_DONEM).ToList();
+                return c.TBL_OGRENCI.Include(x => x.BOLUM).Include(x => x.DONEM).ToList();
             }
         }
     }

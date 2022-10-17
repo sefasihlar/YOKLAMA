@@ -12,16 +12,12 @@ namespace EntityLayer.Concrete
         public string TELEFON { get; set; }
         public string MAIL { get; set; }
 
-        [ForeignKey("TBL_OGRENCI")]
-        public int OGRENCI_ID { get; set; }
-        public TBL_OGRENCI TBL_OGRENCI { get; set; }
+        public TBL_OGRENCI? OGRENCI { get; set; }
 
         public bool DURUM { get; set; }
         public DateTime TARIH { get; set; }
         public int USER_ID { get; set; }
-        [ForeignKey("TBL_SCHOOL_DURUMLARI")]
-        public int SCHOOL_ID { get; set; }
-        public TBL_SCHOOL_DURUMLARI TBL_SCHOOL_DURUMLARI { get; set; }
+        public TBL_SCHOOL_DURUMLARI SCHOOL { get; set; }
         public string OZEL_KOD { get; set; }
 
 

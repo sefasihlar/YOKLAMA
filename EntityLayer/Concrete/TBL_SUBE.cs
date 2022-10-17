@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.AspNetCore.Razor.Language;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace EntityLayer.Concrete
@@ -10,11 +11,12 @@ namespace EntityLayer.Concrete
         public string ADI { get; set; }
         public bool DURUM { get; set; }
 
-        [ForeignKey("TBL_SCHOOL_DURUMLARI")]
-        public int SCHOOL_ID { get; set; }
-        public TBL_SCHOOL_DURUMLARI? TBL_SCHOOL_DURUMLARI { get; set; }
+        public TBL_SCHOOL_DURUMLARI? SCHOOL { get; set; }
 
         public string? OZEL_KOD { get; set; }
+
+
+        public ICollection<TBL_DERS_PROGRAMI>? TBL_DERS_PROGRAMIS { get; set; }
 
 
 

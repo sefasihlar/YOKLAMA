@@ -10,5 +10,7 @@ namespace EntityLayer.Concrete
         public bool DURUM { get; set; }
         public string? OZEL_KOD { get; set; }
 
+        public ICollection<TBL_OGRENCI>? TBL_OGRENCIS { get; set; }
+
     }
 }

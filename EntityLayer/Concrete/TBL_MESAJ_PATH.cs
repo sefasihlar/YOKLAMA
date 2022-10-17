@@ -14,9 +14,8 @@ namespace EntityLayer.Concrete
         public String? SENDER { get; set; }
         public String? CHARSET { get; set; }
         public bool DURUM { get; set; }
-        [ForeignKey("TBL_SCHOOL_DURUMLARI")]
-        public int SCHOOL_ID { get; set; }
-        public TBL_SCHOOL_DURUMLARI? TBL_SCHOOL_DURUMLARI { get; set; }
+
+        public TBL_SCHOOL_DURUMLARI? SCHOOL { get; set; }
         public String? OZEL_KOD { get; set; }
 
 

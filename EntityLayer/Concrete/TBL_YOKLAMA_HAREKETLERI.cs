@@ -8,22 +8,14 @@ namespace EntityLayer.Concrete
         [Key]
         public int YOKLAMA_HAREKETLERI_ID { get; set; }
 
-        [ForeignKey("TBL_DERS_PROGRAMI")]
-        public int DERS_PROGRAMI_ID { get; set; }
-        public virtual TBL_DERS_PROGRAMI? TBL_DERS_PROGRAMI { get; set; }
+        public virtual TBL_DERS_PROGRAMI? PROGRAM { get; set; }
 
-        [ForeignKey("TBL_OGRENCI")]
-        public int OGRENCI_ID { get; set; }
-        public virtual TBL_OGRENCI? TBL_OGRENCI { get; set; }
+        public virtual TBL_OGRENCI? OGRENCI { get; set; }
 
-        [ForeignKey("TBL_DONEM")]
-        public int DONEM_ID { get; set; }
-        public virtual TBL_DONEM? TBL_DONEM { get; set; }
+        public virtual TBL_DONEM? DONEM { get; set; }
 
 
-        [ForeignKey("TBL_SCHOOL_DURUMLARI")]
-        public int SCHOOL_ID { get; set; }
-        public virtual TBL_SCHOOL_DURUMLARI? TBL_SCHOOL_DURUMLARI { get; set; }
+        public virtual TBL_SCHOOL_DURUMLARI? SCHOOL { get; set; }
 
         public DateTime TARIH { get; set; }
         public DateTime SAAT { get; set; }

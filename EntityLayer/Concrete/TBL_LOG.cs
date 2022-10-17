@@ -13,9 +13,7 @@ namespace EntityLayer.Concrete
         public DateTime GIRIS { get; set; }
         public DateTime CIKIS { get; set; }
 
-        [ForeignKey("TBL_SCHOOL_DURUMLARI")]
-        public int SCHOOL_ID { get; set; }
-        public TBL_SCHOOL_DURUMLARI? TBL_SCHOOL_DURUMLARI { get; set; }
+        public TBL_SCHOOL_DURUMLARI? SCHOOL { get; set; }
 
         public string? OZEL_KOD { get; set; }
 

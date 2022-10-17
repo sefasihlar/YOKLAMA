@@ -20,18 +20,15 @@ namespace EntityLayer.Concrete
         public int USER_ID { get; set; }
         public string? OZEL_KOD { get; set; }
 
+        public virtual TBL_BOLUM? BOLUM { get; set; }
 
-        [ForeignKey("TBL_BOLUM")]
-        public int BOLUM_ID { get; set; }
-        public virtual TBL_BOLUM? TBL_BOLUM { get; set; }
+        public virtual TBL_DONEM? DONEM { get; set; }
 
-        [ForeignKey("TBL_DONEM")]
-        public int DONEM_ID { get; set; }
-        public virtual TBL_DONEM? TBL_DONEM { get; set; }
+        public virtual TBL_SCHOOL_DURUMLARI? SCHOOL { get; set; }
 
-        [ForeignKey("TBL_SCHOOL_DURUMLARI")]
-        public int SCHOOL_ID { get; set; }
-        public virtual TBL_SCHOOL_DURUMLARI? TBL_SCHOOL_DURUMLARI { get; set; }
+
+        public ICollection<TBL_VELI>? TBL_VELIS { get; set; }
+        public ICollection<TBL_YOKLAMA_HAREKETLERI>? TBL_YOKLAMA_HAREKETLERIS { get; set; }
 
 
     }

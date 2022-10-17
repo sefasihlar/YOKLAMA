@@ -20,9 +20,6 @@ namespace WebUILayer.Controllers
             return View(values);
         }
 
-<<<<<<< HEAD
-
-=======
         [HttpGet]
         public IActionResult OgretmenAdd()
         {
@@ -33,8 +30,6 @@ namespace WebUILayer.Controllers
         public IActionResult OgretmenAdd(TBL_IDARI_PERSONEL datas)
         {
 
-            datas.SCHOOL_ID = 10;
-            datas.SIFRE = "asdasd";
             ip.Add(datas);
             return RedirectToAction("AllList","Ogretmen");
         }
@@ -52,6 +47,6 @@ namespace WebUILayer.Controllers
             var values = ip.GetWithPersonelId(id);
             return View(values);
         }
->>>>>>> WebUI
+
     }
 }

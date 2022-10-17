@@ -1,4 +1,5 @@
 C:\Users\ayyıldız\Desktop\YoklamaProjesi\Yoklama\EntityLayer\bin\Debug\net6.0\EntityLayer.deps.json
+C:\Users\ayyıldız\Desktop\YoklamaProjesi\Yoklama\EntityLayer\bin\Debug\net6.0\EntityLayer.runtimeconfig.json
 C:\Users\ayyıldız\Desktop\YoklamaProjesi\Yoklama\EntityLayer\bin\Debug\net6.0\EntityLayer.dll
 C:\Users\ayyıldız\Desktop\YoklamaProjesi\Yoklama\EntityLayer\bin\Debug\net6.0\EntityLayer.pdb
 C:\Users\ayyıldız\Desktop\YoklamaProjesi\Yoklama\EntityLayer\obj\Debug\net6.0\EntityLayer.csproj.AssemblyReference.cache
@@ -9,6 +10,5 @@ C:\Users\ayyıldız\Desktop\YoklamaProjesi\Yoklama\EntityLayer\obj\Debug\net6.0\
 C:\Users\ayyıldız\Desktop\YoklamaProjesi\Yoklama\EntityLayer\obj\Debug\net6.0\EntityLayer.dll
 C:\Users\ayyıldız\Desktop\YoklamaProjesi\Yoklama\EntityLayer\obj\Debug\net6.0\refint\EntityLayer.dll
 C:\Users\ayyıldız\Desktop\YoklamaProjesi\Yoklama\EntityLayer\obj\Debug\net6.0\EntityLayer.pdb
-C:\Users\ayyıldız\Desktop\YoklamaProjesi\Yoklama\EntityLayer\obj\Debug\net6.0\ref\EntityLayer.dll
-C:\Users\ayyıldız\Desktop\YoklamaProjesi\Yoklama\EntityLayer\bin\Debug\net6.0\EntityLayer.runtimeconfig.json
 C:\Users\ayyıldız\Desktop\YoklamaProjesi\Yoklama\EntityLayer\obj\Debug\net6.0\EntityLayer.genruntimeconfig.cache
+C:\Users\ayyıldız\Desktop\YoklamaProjesi\Yoklama\EntityLayer\obj\Debug\net6.0\ref\EntityLayer.dll

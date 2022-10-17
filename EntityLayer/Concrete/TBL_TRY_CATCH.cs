@@ -10,9 +10,7 @@ namespace EntityLayer.Concrete
         public string ERROR { get; set; }
         public DateTime DATE { get; set; }
         public DateTime TIME { get; set; }
-        [ForeignKey("TBL_SCHOOL_DURUMLARI")]
-        public int SCHOOL_ID { get; set; }
-        public TBL_SCHOOL_DURUMLARI? TBL_SCHOOL_DURUMLARI { get; set; }
+        public TBL_SCHOOL_DURUMLARI? SCHOOL { get; set; }
         public string OZEL_KOD { get; set; }
         public string ISLEM { get; set; }
         public bool DURUM { get; set; }

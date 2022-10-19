@@ -1,0 +1,276 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Ajax List</h1>
+
+<button type="button" id="btnList" class="btn btn-primary" style="width:150px;width:150px;margin:10px 10px 10px 10px">Personel Listele</button>
+<br />
+<button type="button" id="btnGetId" class="btn btn-primary" style="width:150px;margin:10px 10px 10px 10px">PersonelGetir</button>
+<button type="button" id="btnAdd" class="btn btn-primary" style="width:150px;margin:10px 10px 10px 10px">Personel Ekle</button>
+<button type="button" id="btnsil" class="btn btn-primary" style="width:150px;margin:10px 10px 10px 10px">Personel sil</button>
+<button type="button" id="btnUpdate" class="btn btn-primary" style="width:150px;margin:10px 10px 10px 10px">Personel Güncelle</button>
+<br />
+<div id="PersonelList">
+    Burata gelicek
+</div>
+<div id="PersonelGetir">
+    Buraya bir Ogremen gelicek
+</div>
+<div>
+    <input type="text" id="id" placeholder="Personel Id Değerini Girin"  class="form-control"/>
+</div>
+<div>
+    <input type="text" id="silid" placeholder="silinecek Personel Id Değerini Girin" class="form-control" />
+</div>
+<br />
+<div>
+    <label for="IDARI_PERSONEL_ID" class="form-label">IDARI_PERSONEL_ID</label>
+    <input type="text" class="form-control" placeholder="IDARI_PERSONEL_ID" id="IDARI_PERSONEL_ID">
+    <label for="SOYADI" class="form-label">SOYADI</label>
+    <input type="text" class="form-control" placeholder="SOYADI" id="SOYADI">
+    <label for="TELEFON" class="form-label">TELEFON</label>
+    <input type="text" class="form-control" placeholder="TELEFON" id="TELEFON">
+</div>
+<br />
+<br />
+<br />
+<div>
+    <div class="mb-3">
+        <label for="ADI" class="form-label">ADI</label>
+        <input type="text" class="form-control" placeholder="ADI" id="ADI">
+    </div>
+    <div class="mb-3">
+        <label for="SOYADI" class="form-label">SOYADI</label>
+        <input type="text" class="form-control" placeholder="SOYADI" id="SOYADI">
+    </div>
+    <div class="mb-3">
+        <label for="UNVAN" class="form-label">UNVAN</label>
+        <input type="text" class="form-control" placeholder="UNVAN" id="UNVAN">
+    </div>
+    <div class="mb-3">
+        <label for="TELEFON" class="form-label">TELEFON</label>
+        <input type="text" class="form-control" placeholder="TELEFON" id="TELEFON">
+    </div>
+    <div class="mb-3">
+        <label for="EMAİL" class="form-label">Email</label>
+        <input type="email" class="form-control" placeholder="MAIL" id="MAIL">
+    </div>
+    <div class="mb-3">
+        <label for="SIFRE" class="form-label">SIFRE</label>
+        <input type="text" class="form-control" placeholder="SIFRE" id="SIFRE">
+    </div>
+    <div class="mb-3">
+        <label for="DURUM" class="form-label">DURUM</label>
+        <input type="text" class="form-control" placeholder="Enter Location" id="DURUM">
+    </div>
+    <div class="mb-3">
+        <label for="OKUL" class="form-label">OKUL</label>
+        <input type="text" class="form-control" placeholder="KOD" id="SCHOOL_ID">
+    </div>
+    <div class="mb-3">
+        <label for="OZEL_KOD" class="form-label">KOD</label>
+        <input type="text" class="form-control" placeholder="KOD" id="OZEL_KOD">
+    </div>
+    <div class="text-end">
+        <button type="submit" class="btn btn-success waves-effect waves-light">Save</button>
+        <button type="button" class="btn btn-danger waves-effect waves-light" data-bs-dismiss="modal">Continue</button>
+    </div>
+</div>
+
+@section scripts{
+    <script>
+        $("#btnList").click(function () {
+            $.ajax({
+                contentType: "application/json",
+                dataType: "json",
+                type: "Get",
+                url: "/Ogretmen/AjaxList/",
+                success: function (func) {
+                    let w = jQuery.parseJSON(func);
+                    console.log(w);
+
+
+                    let tabletml = "<table class=table table-bodered><th>SEÇ</th><th>PROFİL</th> <th>ADI</th> <th>SOYADI</th> <th>UNVAN</th> <th>TELEFON</th> <th>MAIL</th> <th>SIFRE</th> <th>DURUM</th> <th>KOD</th><th>AKSİYON</th> "
+                    
+                $.each(w, (index, value) => {
+                tabletml += `<tr>
+                    <td>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="customCheck2">
+                            <label class="form-check-label" for="customCheck2">&nbsp;</label>
+                        </div>
+                    </td>
+                    <td class="table-user">
+                        <img src="/template/assets/images/users/user-4.jpg" alt="table-user" class="me-2 rounded-circle">
+                    </td>
+                    <td>
+                    ${value.ADI}
+                    </td>
+                    <td>
+                            ${value.SOYADI}
+                    </td>
+                    <td>
+                            ${value.UNVAN}
+                    </td>
+                    <td>
+                            ${value.TELEFON}
+                    </td>
+                    <td>
+                            ${value.MAIL}
+                    </td>
+                    <td>
+                            ${value.SIFRE}
+                    </td>
+                    <td>
+                            ${value.OZEL_KOD}
+                    </td>
+
+                    <td>
+                                <span class="badge bg-soft-success text-success">${value.DURUM}</span>
+                    </td>
+
+                    <td>
+                        <form >
+                            <a href="/Ogretmen/PersonelDelete/" class="action-icon"> <i class="mdi mdi-delete"></i></a>
+                        </form>
+                        <a href="/Ogretmen/PersonelDetail/" class="action-icon"> <i class="mdi mdi-square-edit-outline"></i></a>
+
+                    </td>
+                    </tr>`
+
+
+                                        });
+                    tabletml += "</table>";
+                    $("#PersonelList").html(tabletml);
+
+                }
+
+
+            });
+        });
+        $("#btnGetId").click(x=>{
+            let id = $("#id").val();
+            $.ajax({
+                contentType:"application/json",
+                dataType:"json",
+                type:"Get",
+                url: "/Ogretmen/AJaxGetId/",
+                data: { id: id },
+                success:function(func){
+                    let value = jQuery.parseJSON(func);
+                    console.log(value);
+                    let getvalue = `<table class=table table-bodered><tr><th>SEÇ</th><th>PROFİL</th> <th>ADI</th> <th>SOYADI</th> <th>UNVAN</th> <th>TELEFON</th> <th>MAIL</th> <th>SIFRE</th> <th>DURUM</th> <th>KOD</th><th>AKSİYON</th></tr><tr>
+                            <td>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="customCheck2">
+                                    <label class="form-check-label" for="customCheck2">&nbsp;</label>
+                                </div>
+                            </td>
+                            <td class="table-user">
+                                <img src="/template/assets/images/users/user-4.jpg" alt="table-user" class="me-2 rounded-circle">
+                            </td>
+                            <td>
+                            ${value.ADI}
+                            </td>
+                            <td>
+                                    ${value.SOYADI}
+                            </td>
+                            <td>
+                                    ${value.UNVAN}
+                            </td>
+                            <td>
+                                    ${value.TELEFON}
+                            </td>
+                            <td>
+                                    ${value.MAIL}
+                            </td>
+                            <td>
+                                    ${value.SIFRE}
+                            </td>
+                            <td>
+                                    ${value.OZEL_KOD}
+                            </td>
+
+                            <td>
+                                        <span class="badge bg-soft-success text-success">${value.DURUM}</span>
+                            </td>
+
+                            <td>
+                                <form >
+                                    <a href="/Ogretmen/PersonelDelete/" class="action-icon"> <i class="mdi mdi-delete"></i></a>
+                                </form>
+                                <a href="/Ogretmen/PersonelDetail/" class="action-icon"> <i class="mdi mdi-square-edit-outline"></i></a>
+
+                            </td>
+                            </tr></table>`;
+                    $("#PersonelGetir").html(getvalue);
+
+
+                }
+              
+
+            });
+            console.log(id);
+        });
+        $("#btnAdd").click(function(){
+            let personel = {
+                ADI: $("#ADI").val(),
+                SOYADI: $("#SOYADI").val(),
+                UNVAN: $("#UNVAN").val(),
+                TELEFON: $("#TELEFON").val(),
+                MAIL: $("#MAIL").val(),
+                SIFRE: $("#SIFRE").val(),
+                DURUM: $("#DURUM").val(),
+                SCHOOL_ID: $("#SCHOOL_ID").val(),
+                OZEL_KOD: $("#OZEL_KOD").val(),
+
+            };
+            $.ajax({
+                type:"Post",
+                url: "/Ogretmen/AjaxPersonelAdd/",
+                data:personel,
+                success:function(func){
+                    let result = jQuery.parseJSON(func);
+                    alert("Ekleme işlemi başarılı bir şekilde gerçekleşti");
+                    console.log(func);
+                }
+            });
+        });
+        $("#btnsil").click(x=> {
+            let id = $("#silid").val();
+            $.ajax({
+                url: "/Ogretmen/AjaxPersonelDelete/" + id,
+                type:"post",
+                dataType:"json",
+                success:function(func){
+                    alert("silme işlemi başarılı bir şekilde gerçekleşti");
+                    console.log(func);
+                }
+
+            });
+        });
+        $("#btnUpdate").click(function(){
+
+            let update = {
+                IDARI_PERSONEL_ID: $("#IDARI_PERSONEL_ID").val(),
+                SOYADI: $("#SOYADI").val(),
+                TELEFON:$("#TELEFON").val()
+
+            };
+            console.log(update);
+            $.ajax({
+                type: "post",
+                url: "/Ogretmen/AjaxPersonelUpdate/",
+                data: update,
+                success: function (func) {
+                    alert("update işlemi başarılı bir şekilde gerçekleşti");
+                    console.log(func);
+                }
+            });
+        });
+
+
+    </script>
+}

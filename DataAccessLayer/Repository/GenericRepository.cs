@@ -25,8 +25,6 @@ namespace DataAccessLayer.Repository
         }
 
 
-        
-
         public List<T> GetListAll()
         {
             return _contex.Set<T>().ToList();
@@ -41,6 +39,7 @@ namespace DataAccessLayer.Repository
         public void Update(T entity)
         {
             _contex.Update(entity);
+            _contex.SaveChanges();
         }
 
 

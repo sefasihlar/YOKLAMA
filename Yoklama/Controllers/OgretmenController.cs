@@ -2,6 +2,7 @@
 using DataAccessLayer.EntityFramework;
 using EntityLayer.Concrete;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 
 namespace WebUILayer.Controllers
 {
@@ -46,6 +47,49 @@ namespace WebUILayer.Controllers
         {
             var values = ip.GetWithPersonelId(id);
             return View(values);
+        }
+
+        public IActionResult AjaxList()
+        {
+            var personel = ip.GetList();
+            var jsonPersonel = JsonConvert.SerializeObject(personel);
+            return Json(jsonPersonel);
+        }
+
+        public IActionResult AJaxGetId(int id)
+        {
+            var personel = ip.GetList().Where(x => x.IDARI_PERSONEL_ID == id).FirstOrDefault();
+            var jsonPersonel = JsonConvert.SerializeObject(personel);
+
+            return Json(jsonPersonel);
+        }
+
+        [HttpPost]
+        public IActionResult AjaxPersonelAdd(TBL_IDARI_PERSONEL add)
+        {
+            ip.Add(add);
+            var jsonpersonel = JsonConvert.SerializeObject(add);
+            return Json(jsonpersonel);
+        }
+
+        [HttpPost]
+        public IActionResult AjaxPersonelDelete(int id)
+        {
+            var ogretmen = ip.GetById(id);
+            ip.Remove(ogretmen);
+            return Json(ogretmen);
+
+        }
+        [HttpPost]
+        public IActionResult AjaxPersonelUpdate(TBL_IDARI_PERSONEL update)
+        {
+            var personel = ip.GetById(update.IDARI_PERSONEL_ID);
+            personel.SOYADI = update.SOYADI;
+            personel.TELEFON = update.TELEFON;
+            ip.Update(personel);
+            var JsonPersonel = JsonConvert.SerializeObject(update);
+            return Json(JsonPersonel);
+
         }
 
     }

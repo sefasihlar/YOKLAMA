@@ -43,7 +43,7 @@ namespace BusinessLayer.Concrete
 
         public void Update(TBL_IDARI_PERSONEL idaripersonel)
         {
-            throw new NotImplementedException();
+            _IdariPersonelDal.Update(idaripersonel);
         }
     }
 }

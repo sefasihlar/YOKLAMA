@@ -1,0 +1,19 @@
+﻿  $("#btnUpdate").click(function(){
+
+            let update = {
+                IDARI_PERSONEL_ID: $("#IDARI_PERSONEL_ID").val(),
+                SOYADI: $("#SOYADI").val(),
+                TELEFON:$("#TELEFON").val()
+
+            };
+            console.log(update);
+            $.ajax({
+                type: "post",
+                url: "/Ogretmen/AjaxPersonelUpdate/",
+                data: update,
+                success: function (func) {
+                    alert("update işlemi başarılı bir şekilde gerçekleşti");
+                    console.log(func);
+                }
+            });
+        });

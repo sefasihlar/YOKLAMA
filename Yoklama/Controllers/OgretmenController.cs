@@ -27,13 +27,13 @@ namespace WebUILayer.Controllers
             return View();
         }
 
-        [HttpPost]
-        public IActionResult OgretmenAdd(TBL_IDARI_PERSONEL datas)
-        {
+        //[HttpPost]
+        //public IActionResult OgretmenAdd(TBL_IDARI_PERSONEL datas)
+        //{
 
-            ip.Add(datas);
-            return RedirectToAction("AllList","Ogretmen");
-        }
+        //    ip.Add(datas);
+        //    return RedirectToAction("AllList","Ogretmen");
+        //}
 
         
         public IActionResult PersonelDelete(int  id)
@@ -64,12 +64,25 @@ namespace WebUILayer.Controllers
             return Json(jsonPersonel);
         }
 
+        [HttpGet]
+        public IActionResult AjaxPersonelAdd()
+        {
+            return View();
+        }
+
         [HttpPost]
         public IActionResult AjaxPersonelAdd(TBL_IDARI_PERSONEL add)
         {
             ip.Add(add);
             var jsonpersonel = JsonConvert.SerializeObject(add);
             return Json(jsonpersonel);
+        }
+
+        [HttpGet]
+        public IActionResult AjaxPersonelDelete()
+        {
+            return RedirectToAction("AllList", "Ogretmen");
+
         }
 
         [HttpPost]

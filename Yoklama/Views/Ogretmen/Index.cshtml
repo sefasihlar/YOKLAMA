@@ -81,195 +81,131 @@
 
 @section scripts{
     <script>
-        $("#btnList").click(function () {
-            $.ajax({
-                contentType: "application/json",
-                dataType: "json",
-                type: "Get",
-                url: "/Ogretmen/AjaxList/",
-                success: function (func) {
-                    let w = jQuery.parseJSON(func);
-                    console.log(w);
+        @await Html.PartialAsync("PartialOgretmen/ListPersonel")
+        @await Html.PartialAsync("PartialOgretmen/AddPersonel")
+        @await Html.PartialAsync("PartialOgretmen/DeletePersonel")
+        @await Html.PartialAsync("PartialOgretmen/UpdatePersonel")
+        @await Html.PartialAsync("PartialOgretmen/CallPersonel")
+        //$("#btnGetId").click(x=>{
+        //    let id = $("#id").val();
+        //    $.ajax({
+        //        contentType:"application/json",
+        //        dataType:"json",
+        //        type:"Get",
+        //        url: "/Ogretmen/AJaxGetId/",
+        //        data: { id: id },
+        //        success:function(func){
+        //            let value = jQuery.parseJSON(func);
+        //            console.log(value);
+        //            let getvalue = `<table class=table table-bodered><tr><th>SEÇ</th><th>PROFİL</th> <th>ADI</th> <th>SOYADI</th> <th>UNVAN</th> <th>TELEFON</th> <th>MAIL</th> <th>SIFRE</th> <th>DURUM</th> <th>KOD</th><th>AKSİYON</th></tr><tr>
+        //                    <td>
+        //                        <div class="form-check">
+        //                            <input type="checkbox" class="form-check-input" id="customCheck2">
+        //                            <label class="form-check-label" for="customCheck2">&nbsp;</label>
+        //                        </div>
+        //                    </td>
+        //                    <td class="table-user">
+        //                        <img src="/template/assets/images/users/user-4.jpg" alt="table-user" class="me-2 rounded-circle">
+        //                    </td>
+        //                    <td>
+        //                    ${value.ADI}
+        //                    </td>
+        //                    <td>
+        //                            ${value.SOYADI}
+        //                    </td>
+        //                    <td>
+        //                            ${value.UNVAN}
+        //                    </td>
+        //                    <td>
+        //                            ${value.TELEFON}
+        //                    </td>
+        //                    <td>
+        //                            ${value.MAIL}
+        //                    </td>
+        //                    <td>
+        //                            ${value.SIFRE}
+        //                    </td>
+        //                    <td>
+        //                            ${value.OZEL_KOD}
+        //                    </td>
+
+        //                    <td>
+        //                                <span class="badge bg-soft-success text-success">${value.DURUM}</span>
+        //                    </td>
+
+        //                    <td>
+        //                        <form >
+        //                            <a href="/Ogretmen/PersonelDelete/" class="action-icon"> <i class="mdi mdi-delete"></i></a>
+        //                        </form>
+        //                        <a href="/Ogretmen/PersonelDetail/" class="action-icon"> <i class="mdi mdi-square-edit-outline"></i></a>
+
+        //                    </td>
+        //                    </tr></table>`;
+        //            $("#PersonelGetir").html(getvalue);
 
 
-                    let tabletml = "<table class=table table-bodered><th>SEÇ</th><th>PROFİL</th> <th>ADI</th> <th>SOYADI</th> <th>UNVAN</th> <th>TELEFON</th> <th>MAIL</th> <th>SIFRE</th> <th>DURUM</th> <th>KOD</th><th>AKSİYON</th> "
-                    
-                $.each(w, (index, value) => {
-                tabletml += `<tr>
-                    <td>
-                        <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="customCheck2">
-                            <label class="form-check-label" for="customCheck2">&nbsp;</label>
-                        </div>
-                    </td>
-                    <td class="table-user">
-                        <img src="/template/assets/images/users/user-4.jpg" alt="table-user" class="me-2 rounded-circle">
-                    </td>
-                    <td>
-                    ${value.ADI}
-                    </td>
-                    <td>
-                            ${value.SOYADI}
-                    </td>
-                    <td>
-                            ${value.UNVAN}
-                    </td>
-                    <td>
-                            ${value.TELEFON}
-                    </td>
-                    <td>
-                            ${value.MAIL}
-                    </td>
-                    <td>
-                            ${value.SIFRE}
-                    </td>
-                    <td>
-                            ${value.OZEL_KOD}
-                    </td>
-
-                    <td>
-                                <span class="badge bg-soft-success text-success">${value.DURUM}</span>
-                    </td>
-
-                    <td>
-                        <form >
-                            <a href="/Ogretmen/PersonelDelete/" class="action-icon"> <i class="mdi mdi-delete"></i></a>
-                        </form>
-                        <a href="/Ogretmen/PersonelDetail/" class="action-icon"> <i class="mdi mdi-square-edit-outline"></i></a>
-
-                    </td>
-                    </tr>`
-
-
-                                        });
-                    tabletml += "</table>";
-                    $("#PersonelList").html(tabletml);
-
-                }
-
-
-            });
-        });
-        $("#btnGetId").click(x=>{
-            let id = $("#id").val();
-            $.ajax({
-                contentType:"application/json",
-                dataType:"json",
-                type:"Get",
-                url: "/Ogretmen/AJaxGetId/",
-                data: { id: id },
-                success:function(func){
-                    let value = jQuery.parseJSON(func);
-                    console.log(value);
-                    let getvalue = `<table class=table table-bodered><tr><th>SEÇ</th><th>PROFİL</th> <th>ADI</th> <th>SOYADI</th> <th>UNVAN</th> <th>TELEFON</th> <th>MAIL</th> <th>SIFRE</th> <th>DURUM</th> <th>KOD</th><th>AKSİYON</th></tr><tr>
-                            <td>
-                                <div class="form-check">
-                                    <input type="checkbox" class="form-check-input" id="customCheck2">
-                                    <label class="form-check-label" for="customCheck2">&nbsp;</label>
-                                </div>
-                            </td>
-                            <td class="table-user">
-                                <img src="/template/assets/images/users/user-4.jpg" alt="table-user" class="me-2 rounded-circle">
-                            </td>
-                            <td>
-                            ${value.ADI}
-                            </td>
-                            <td>
-                                    ${value.SOYADI}
-                            </td>
-                            <td>
-                                    ${value.UNVAN}
-                            </td>
-                            <td>
-                                    ${value.TELEFON}
-                            </td>
-                            <td>
-                                    ${value.MAIL}
-                            </td>
-                            <td>
-                                    ${value.SIFRE}
-                            </td>
-                            <td>
-                                    ${value.OZEL_KOD}
-                            </td>
-
-                            <td>
-                                        <span class="badge bg-soft-success text-success">${value.DURUM}</span>
-                            </td>
-
-                            <td>
-                                <form >
-                                    <a href="/Ogretmen/PersonelDelete/" class="action-icon"> <i class="mdi mdi-delete"></i></a>
-                                </form>
-                                <a href="/Ogretmen/PersonelDetail/" class="action-icon"> <i class="mdi mdi-square-edit-outline"></i></a>
-
-                            </td>
-                            </tr></table>`;
-                    $("#PersonelGetir").html(getvalue);
-
-
-                }
+        //        }
               
 
-            });
-            console.log(id);
-        });
-        $("#btnAdd").click(function(){
-            let personel = {
-                ADI: $("#ADI").val(),
-                SOYADI: $("#SOYADI").val(),
-                UNVAN: $("#UNVAN").val(),
-                TELEFON: $("#TELEFON").val(),
-                MAIL: $("#MAIL").val(),
-                SIFRE: $("#SIFRE").val(),
-                DURUM: $("#DURUM").val(),
-                SCHOOL_ID: $("#SCHOOL_ID").val(),
-                OZEL_KOD: $("#OZEL_KOD").val(),
+        //    });
+        //    console.log(id);
+        //});
+        //$("#btnAdd").click(function(){
+        //    let personel = {
+        //        ADI: $("#ADI").val(),
+        //        SOYADI: $("#SOYADI").val(),
+        //        UNVAN: $("#UNVAN").val(),
+        //        TELEFON: $("#TELEFON").val(),
+        //        MAIL: $("#MAIL").val(),
+        //        SIFRE: $("#SIFRE").val(),
+        //        DURUM: $("#DURUM").val(),
+        //        SCHOOL_ID: $("#SCHOOL_ID").val(),
+        //        OZEL_KOD: $("#OZEL_KOD").val(),
 
-            };
-            $.ajax({
-                type:"Post",
-                url: "/Ogretmen/AjaxPersonelAdd/",
-                data:personel,
-                success:function(func){
-                    let result = jQuery.parseJSON(func);
-                    alert("Ekleme işlemi başarılı bir şekilde gerçekleşti");
-                    console.log(func);
-                }
-            });
-        });
-        $("#btnsil").click(x=> {
-            let id = $("#silid").val();
-            $.ajax({
-                url: "/Ogretmen/AjaxPersonelDelete/" + id,
-                type:"post",
-                dataType:"json",
-                success:function(func){
-                    alert("silme işlemi başarılı bir şekilde gerçekleşti");
-                    console.log(func);
-                }
+        //    };
+        //    $.ajax({
+        //        type:"Post",
+        //        url: "/Ogretmen/AjaxPersonelAdd/",
+        //        data:personel,
+        //        success:function(func){
+        //            let result = jQuery.parseJSON(func);
+        //            alert("Ekleme işlemi başarılı bir şekilde gerçekleşti");
+        //            console.log(func);
+        //        }
+        //    });
+        //});
+        //$("#btnsil").click(x=> {
+        //    let id = $("#silid").val();
+        //    $.ajax({
+        //        url: "/Ogretmen/AjaxPersonelDelete/" + id,
+        //        type:"post",
+        //        dataType:"json",
+        //        success:function(func){
+        //            alert("silme işlemi başarılı bir şekilde gerçekleşti");
+        //            console.log(func);
+        //        }
 
-            });
-        });
-        $("#btnUpdate").click(function(){
+        //    });
+        //});
+        //$("#btnUpdate").click(function(){
 
-            let update = {
-                IDARI_PERSONEL_ID: $("#IDARI_PERSONEL_ID").val(),
-                SOYADI: $("#SOYADI").val(),
-                TELEFON:$("#TELEFON").val()
+        //    let update = {
+        //        IDARI_PERSONEL_ID: $("#IDARI_PERSONEL_ID").val(),
+        //        SOYADI: $("#SOYADI").val(),
+        //        TELEFON:$("#TELEFON").val()
 
-            };
-            console.log(update);
-            $.ajax({
-                type: "post",
-                url: "/Ogretmen/AjaxPersonelUpdate/",
-                data: update,
-                success: function (func) {
-                    alert("update işlemi başarılı bir şekilde gerçekleşti");
-                    console.log(func);
-                }
-            });
-        });
+        //    };
+        //    console.log(update);
+        //    $.ajax({
+        //        type: "post",
+        //        url: "/Ogretmen/AjaxPersonelUpdate/",
+        //        data: update,
+        //        success: function (func) {
+        //            alert("update işlemi başarılı bir şekilde gerçekleşti");
+        //            console.log(func);
+        //        }
+        //    });
+        //});
 
 
     </script>

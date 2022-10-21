@@ -1,0 +1,64 @@
+﻿$("#btnGetId").click(x => {
+                                let id = $("#id").val();
+                                $.ajax({
+                                    contentType: "application/json",
+                                    dataType: "json",
+                                    type: "Get",
+                                    url: "/Ogretmen/AJaxGetId/",
+                                    data: { id: id },
+                                    success: function (func) {
+                                        let value = jQuery.parseJSON(func);
+                                        console.log(value);
+                                        let getvalue = `<table class=table table-bodered><tr><th>SEÇ</th><th>PROFİL</th> <th>ADI</th> <th>SOYADI</th> <th>UNVAN</th> <th>TELEFON</th> <th>MAIL</th> <th>SIFRE</th> <th>DURUM</th> <th>KOD</th><th>AKSİYON</th></tr><tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" class="form-check-input" id="customCheck2">
+                                                            <label class="form-check-label" for="customCheck2">&nbsp;</label>
+                                                        </div>
+                                                    </td>
+                                                    <td class="table-user">
+                                                        <img src="/template/assets/images/users/user-4.jpg" alt="table-user" class="me-2 rounded-circle">
+                                                    </td>
+                                                    <td>
+                                                    ${value.ADI}
+                                                    </td>
+                                                    <td>
+                                                            ${value.SOYADI}
+                                                    </td>
+                                                    <td>
+                                                            ${value.UNVAN}
+                                                    </td>
+                                                    <td>
+                                                            ${value.TELEFON}
+                                                    </td>
+                                                    <td>
+                                                            ${value.MAIL}
+                                                    </td>
+                                                    <td>
+                                                            ${value.SIFRE}
+                                                    </td>
+                                                    <td>
+                                                            ${value.OZEL_KOD}
+                                                    </td>
+
+                                                    <td>
+                                                                <span class="badge bg-soft-success text-success">${value.DURUM}</span>
+                                                    </td>
+
+                                                    <td>
+                                                        <form >
+                                                            <a href="/Ogretmen/PersonelDelete/" class="action-icon"> <i class="mdi mdi-delete"></i></a>
+                                                        </form>
+                                                        <a href="/Ogretmen/PersonelDetail/" class="action-icon"> <i class="mdi mdi-square-edit-outline"></i></a>
+
+                                                    </td>
+                                                    </tr></table>`;
+                                        $("#PersonelGetir").html(getvalue);
+
+
+                                    }
+
+
+                                });
+                                console.log(id);
+                            });

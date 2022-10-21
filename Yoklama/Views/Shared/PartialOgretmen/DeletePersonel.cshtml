@@ -1,0 +1,15 @@
+﻿$("#btnsil").click(x=> {
+            let id = $(this).attr('data-id');
+            alert(id);
+            $.ajax({
+                url: "/Ogretmen/AjaxPersonelDelete/" + id,
+                type:"post",
+                dataType:"json",
+              
+                success:function(func){
+                    alert("silme işlemi başarılı bir şekilde gerçekleşti");
+                    console.log(func);
+                }
+
+            });
+        });

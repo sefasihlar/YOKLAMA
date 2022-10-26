@@ -14,40 +14,30 @@
                         <button type="button" class="btn btn-danger waves-effect waves-light" data-bs-toggle="modal" data-bs-target="#custom-modal"><i class="mdi mdi-plus-circle me-1"></i>Yeni Personel Ekle</button>
                     </div>
                     <div class="col-sm-8">
-                        <div class="text-sm-end mt-2 mt-sm-0">
-                            <button type="button" class="btn btn-success mb-2 me-1"><i class="mdi mdi-cog"></i></button>
-
-                            <button type="button" id="btnList" class="btn btn-light mb-2">Personel Listele</button>
-                            <button type="button" id="btnGetId" class="btn btn-light mb-2">PersonelGetir</button>
-                            <button type="button" id="btnsil" class="btn btn-light mb-2">Personel sil</button>
-                            <button type="button" id="btnUpdate" class="btn btn-light mb-2">Personel Güncelle</button>
+                        <div class="text-sm-end mt-1 mt-sm-0">
+                            
+                            <input type="submit" name="btnsil" value="btnsil" class="btn btn-danger btnsil" data-id="${value.IDARI_PERSONEL_ID}" id="btnsilme" />
+                            <button type="button" id="btnGetId" class="btn btn-danger mb-1">PersonelGetir</button>
+                            <input type="text" style="border:revert" id="id" class="btn btn-light mb-1" placeholder="TC" class="form-control" />
+                       
+                          
                         </div>
                     </div><!-- end col-->
                 </div>
                 <br />
-                <div id="PersonelList">
-                    Burata gelicek
-                </div>
                 <div id="PersonelGetir">
-                    Buraya bir Ogremen gelicek
+              
                 </div>
+                <div id="PersonelList">
+             
+                </div>
+           
                 <div>
-                    <input type="text" id="id" placeholder="Personel Id Değerini Girin" class="form-control" />
+                    <button type="button" id="btnsil" class="btn btn-light mb-1">Personel sil</button>
                 </div>
                 <div>
                     <input type="text" id="silid" placeholder="silinecek Personel Id Değerini Girin" class="form-control" />
                 </div>
-                <br />
-                <div>
-                    <label for="IDARI_PERSONEL_ID" class="form-label">IDARI_PERSONEL_ID</label>
-                    <input type="text" class="form-control" placeholder="IDARI_PERSONEL_ID" id="IDARI_PERSONEL_ID">
-                    <label for="SOYADI" class="form-label">SOYADI</label>
-                    <input type="text" class="form-control" placeholder="SOYADI" id="SOYADI">
-                    <label for="TELEFON" class="form-label">TELEFON</label>
-                    <input type="text" class="form-control" placeholder="TELEFON" id="TELEFON">
-                </div>
-                <br />
-                <br />
                 <br />
                 <div class="modal fade" id="custom-modal" tabindex="-1" role="dialog" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered">
@@ -59,16 +49,17 @@
 
                             @section scripts{
                                 <script>
-                                    @await Html.PartialAsync("PartialOgretmen/ListPersonel")
-                                    @await Html.PartialAsync("PartialOgretmen/AddPersonel")
+
                                     @await Html.PartialAsync("PartialOgretmen/CallPersonel")
+                                    @await Html.PartialAsync("PartialOgretmen/AddPersonel")
+                                    @await Html.PartialAsync("PartialOgretmen/ListPersonel")
                                     @await Html.PartialAsync("PartialOgretmen/DeletePersonel")
                                     @await Html.PartialAsync("PartialOgretmen/UpdatePersonel")
 
 
                                 </script>
                             }
-
+                       
                                 <div class="modal-body p-4">
                                     <div>
                                         <div class="mb-3">

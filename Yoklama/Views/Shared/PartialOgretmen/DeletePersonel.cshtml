@@ -1,5 +1,6 @@
-﻿$("#btnsil").click(x=> {
-            let id = $(this).attr('data-id');
+﻿$("#btnsilme").click(x=> {
+            alert("Sil butonuna tıklandı");
+            let id = $(this).attr("data-id");
             alert(id);
             $.ajax({
                 url: "/Ogretmen/AjaxPersonelDelete/" + id,

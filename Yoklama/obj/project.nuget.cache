@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zL58Hk7GrXe/3oxLMNmZLfRHFyHK+LZPN6CVUpAj4YLduYZmxPZxVQTOVZ6Rr9c+UKGrxXdVRXgh7UmUeB+FZQ==",
+  "dgSpecHash": "ZLzztMYUxbdw7Rk882aPKY7I7Yks2JlT+LC8hbNAmNHVTHXJ54/W2g4VFc2/lKPNAj0Wp3nnAP/zNfNtE4Qc9w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ayyıldız\\Desktop\\YoklamaProjesi\\Yoklama\\Yoklama\\WebUILayer.csproj",
+  "projectFilePath": "C:\\Users\\ayyıldız\\Desktop\\Development\\YoklamaProjesi\\Yoklama\\Yoklama\\WebUILayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ayyıldız\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\ayyıldız\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",

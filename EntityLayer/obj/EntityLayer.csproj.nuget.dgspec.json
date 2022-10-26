@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ayyıldız\\Desktop\\YoklamaProjesi\\Yoklama\\EntityLayer\\EntityLayer.csproj": {}
+    "C:\\Users\\ayyıldız\\Desktop\\Development\\YoklamaProjesi\\Yoklama\\EntityLayer\\EntityLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ayyıldız\\Desktop\\YoklamaProjesi\\Yoklama\\EntityLayer\\EntityLayer.csproj": {
+    "C:\\Users\\ayyıldız\\Desktop\\Development\\YoklamaProjesi\\Yoklama\\EntityLayer\\EntityLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ayyıldız\\Desktop\\YoklamaProjesi\\Yoklama\\EntityLayer\\EntityLayer.csproj",
+        "projectUniqueName": "C:\\Users\\ayyıldız\\Desktop\\Development\\YoklamaProjesi\\Yoklama\\EntityLayer\\EntityLayer.csproj",
         "projectName": "EntityLayer",
-        "projectPath": "C:\\Users\\ayyıldız\\Desktop\\YoklamaProjesi\\Yoklama\\EntityLayer\\EntityLayer.csproj",
+        "projectPath": "C:\\Users\\ayyıldız\\Desktop\\Development\\YoklamaProjesi\\Yoklama\\EntityLayer\\EntityLayer.csproj",
         "packagesPath": "C:\\Users\\ayyıldız\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ayyıldız\\Desktop\\YoklamaProjesi\\Yoklama\\EntityLayer\\obj\\",
+        "outputPath": "C:\\Users\\ayyıldız\\Desktop\\Development\\YoklamaProjesi\\Yoklama\\EntityLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ayyıldız\\AppData\\Roaming\\NuGet\\NuGet.Config",

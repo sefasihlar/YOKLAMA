@@ -4,157 +4,213 @@
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
+@section scripts{
+    <script>
+      $("#btnUpdate").click(function(){
 
+            let update = {
+                IDARI_PERSONEL_ID: $("#IDARI_PERSONEL_ID").val(),
+                ADI: $("#ADI").val(),
+                SOYADI: $("#SOYADI").val(),
+                UNVAN:$("#UNVAN").val(),
+                MAIL:$("#MAIL").val(),
+                TELEFON:$("#TELEFON").val(),
+                SIFRE:$("#SIFRE").val(),
+                OZEL_KOD:$("#OZEL_KOD").val(),
+                DURUM:$("#DURUM").val(),
+            };
+            console.log(update);
+            $.ajax({
+                type: "post",
+                url: "/Ogretmen/AjaxPersonelUpdate/",
+                data: update,
+                success: function (func) {
+                    alert("update işlemi başarılı bir şekilde gerçekleşti");
+                    console.log(func);
+                }
+            });
+        });
+        </script>
+}
 
-<!-- start page title -->
-<div class="row">
-    <div class="col-12">
-        <div class="page-title-box">
-            <div class="page-title-left">
-                <ol class="breadcrumb m-0">
-                    <li class="breadcrumb-item"><a href="javascript: void(0);">Oğretmenler</a></li>
-                    <li class="breadcrumb-item active">Ogretmen detay</li>
-                </ol>
+    <!-- start page title -->
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box">
+                <div class="page-title-left">
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item"><a href="/Ogretmen/AllList">Oğretmenler</a></li>
+                        <li class="breadcrumb-item active">Ogretmen detay</li>
+                    </ol>
+                </div>
             </div>
-            <h4 class="page-title">Personel Detay</h4>
         </div>
     </div>
-</div>
-<!-- end page title -->
-
-<div class="row">
-    <div class="col-xl-12 col-lg-12">
-        <!-- project card -->
-        @foreach (var item in Model)
-        {
-
-            <div class="card d-block">
+    <!-- end page title -->
+@foreach (var item in Model)
+{
+    <div class="row">
+        <!-- Basic Layout -->
+        <div class="col-xxl">
+            <div class="card mb-4">
+                <div class="card-header d-flex align-items-center justify-content-between">
+                    <h5 class="mb-0">KİŞİSEL BİLGİLER</h5>
+                    <small class="text-muted float-end">Default label</small>
+                </div>
                 <div class="card-body">
-
-                    <div class="float-sm-end mb-2 mb-sm-0">
-                        <div class="row g-2">
-                            <div class="col-auto">
-                                <a href="tickets-list.html" class="btn btn-sm btn-link"><i class="mdi mdi-keyboard-backspace"></i> Back</a>
-                            </div>
-                            <div class="col-auto">
-                                <select class="form-select form-select-sm form">
-                                    <option selected="">Watch</option>
-                                    <option value="1">Remind me</option>
-                                    <option value="2">Close</option>
-                                </select>
+                    <form>
+                        <div class="row mb-3">
+                            <label class="col-sm-2 col-form-label" for="basic-default-name">TC</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="IDARI_PERSONEL_ID" value="@item.IDARI_PERSONEL_ID" />
                             </div>
                         </div>
-                    </div> <!-- end dropdown-->
-
-                    <h4 class="mb-3 mt-0 font-18">Kaç aydır Aktif oldugnu gösterecek</h4>
-
-                    <div class="clerfix"></div>
-
-                    <div class="row">
-                        <div class="col-md-4">
-                            <!-- Ticket type -->
-                            <label class="mt-2 mb-1">Personel Statü</label>
-                            <p>
-                                <i class='mdi mdi-ticket font-18 text-success me-1 align-middle'></i>@item.UNVAN
-                            </p>
-                            <!-- end Ticket Type -->
+                        <div class="row mb-3">
+                            <label class="col-sm-2 col-form-label" for="basic-default-name">AD</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="ADI" value="@item.ADI" />
+                            </div>
                         </div>
-                    </div> <!-- end row -->
-
-                    <div class="row">
-                        <div class="col-md-6">
-                            <!-- Reported by -->
-                            <label class="mt-2 mb-1">Kişisel Bilgiler:</label>
-                            <div class="d-flex align-items-start">
-                                <img src="\template\assets\images\users\user-2.jpg" alt="Arya S"
-                                 class="rounded-circle me-2" height="24" />
-                                <div class="w-100">
-
-                                    <p>Ad-Soyad: @item.ADI @item.SOYADI</p>
-                                    <p>Telefon: @item.TELEFON</p>
-                                    <p>Mail: @item.MAIL</p>
-                                    <p>Şifre: @item.SIFRE</p>
-                                    <p>Kod: #@item.OZEL_KOD</p>
-
-
-
+                        <div class="row mb-3">
+                            <label class="col-sm-2 col-form-label" id="SOYAD" for="basic-default-company">SOYAD</label>
+                            <div class="col-sm-10">
+                                <input type="text"
+                                   class="form-control"
+                                   id="SOYADI"
+                                   value="@item.SOYADI" />
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label class="col-sm-2 col-form-label" for="basic-default-email">Email</label>
+                            <div class="col-sm-10">
+                                <div class="input-group input-group-merge">
+                                    <input type="text"
+                                       id="MAIL"
+                                       class="form-control"
+                                       value="@item.MAIL"
+                                       aria-label="john.doe"
+                                       aria-describedby="basic-default-email2" />
+                                    <span class="input-group-text" id="basic-default-email2"></span>
+                                </div>
+                                <div class="form-text">You can use letters, numbers & periods</div>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label class="col-sm-2 col-form-label" for="basic-default-phone">Telefon</label>
+                            <div class="col-sm-10">
+                                <input type="text"
+                                   id="TELEFON"
+                                   class="form-control phone-mask"
+                                   value="@item.TELEFON"
+                                   aria-label="658 799 8941"
+                                   aria-describedby="basic-default-phone" />
+                            </div>
+                        </div>
+                        <div class="row justify-content-end">
+                            <div class="col-sm-10">
+              
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Basic with Icons -->
+        <div class="col-xxl">
+            <div class="card mb-4">
+                <div class="card-header d-flex align-items-center justify-content-between">
+                    <h5 class="mb-0">Static Bilgiler</h5>
+                    <small class="text-muted float-end">Merged input group</small>
+                </div>
+                <div class="card-body">
+                    <form>
+                        <div class="row mb-3">
+                            <label class="col-sm-2 col-form-label" for="basic-icon-default-fullname">Durum</label>
+                            <div class="col-sm-10">
+                        
+                                <div class="input-group input-group-merge">
+                                    <input type="text"
+                                       id="DURUM"
+                                       class="form-control"
+                                       placeholder="@item.DURUM"
+                                       aria-label="ACME Inc."
+                                       aria-describedby="basic-icon-default-company2" />
                                 </div>
                             </div>
-                            <!-- end Reported by -->
-                        </div> <!-- end col -->
-
-                        <div class="col-md-6">
-                            <!-- assignee -->
-                            <label class="mt-2 mb-1">Buraya ekleyen kişinin bilgileri gelicek:</label>
-                            <div class="d-flex align-items-start">
-                                <img src="\template\assets\images\users\user-10.jpg" alt="Arya S"
-                                 class="rounded-circle me-2" height="24" />
-                                <div class="w-100">
-                                    <p> Thelma Fridley </p>
+                        </div>
+                        <div class="row mb-3">
+                            <label class="col-sm-2 col-form-label" for="basic-icon-default-company">Unvan</label>
+                            <div class="col-sm-10">
+                                <div class="input-group input-group-merge">
+                                    <span id="basic-icon-default-company2" class="input-group-text">
+                                        <i class="bx bx-buildings"></i>
+                                    </span>
+                                    <input type="text"
+                                       id="UNVAN"
+                                       class="form-control"
+                                       value="@item.UNVAN"
+                                       aria-label="ACME Inc."
+                                       aria-describedby="basic-icon-default-company2" />
                                 </div>
                             </div>
-                            <!-- end assignee -->
-                        </div> <!-- end col -->
-                    </div> <!-- end row -->
-
-                    <div class="row">
-                        <div class="col-md-6">
-                            <!-- assignee -->
-                            <label class="mt-2 mb-1">Kayıt Tarihi:</label>
-                            <p>10 Feb 2020 <small class="text-muted">1:37 PM</small></p>
-                            <!-- end assignee -->
-                        </div> <!-- end col -->
-
-                        <div class="col-md-6">
-                            <!-- assignee -->
-                            <label class="mt-2 mb-1">Güncellenme Tarihi:</label>
-                            <p>13 Feb 2020 <small class="text-muted">4:09 PM</small></p>
-                            <!-- end assignee -->
-                        </div> <!-- end col -->
-                    </div> <!-- end row -->
-
-                    <div class="row">
-                        <div class="col-md-6">
-                            <!-- Status -->
-                            <label class="mt-2 form-label">Durum bilgileri eklenicek</label>
-                            <div class="row">
-                                <div class="col-auto">
-                                    <select class="form-select form-select-sm">
-                                        <option>Aktif</option>
-                                        <option>Kapat</option>
-                                        <option>Eklenme Sürecinde</option>
-                                    </select>
+                        </div>
+                        <div class="row mb-3">
+                            <label class="col-sm-2 col-form-label" for="basic-icon-default-email">Sifre</label>
+                            <div class="col-sm-10">
+                                <div class="input-group input-group-merge">
+                                    <span class="input-group-text"><i class="bx bx-envelope"></i></span>
+                                    <input type="text"
+                                       id="SIFRE"
+                                       class="form-control"
+                                       value="@item.SIFRE"
+                                       aria-label="john.doe"
+                                       aria-describedby="basic-icon-default-email2" />
+                                    <span id="basic-icon-default-email2" class="input-group-text"></span>
+                                </div>
+                                <div class="form-text">You can use letters, numbers & periods</div>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label class="col-sm-2 form-label" for="basic-icon-default-phone">Ozel Kod</label>
+                            <div class="col-sm-10">
+                                <div class="input-group input-group-merge">
+                                    <span id="basic-icon-default-phone2" class="input-group-text">
+                                        <i class="bx bx-phone"></i>
+                                    </span>
+                                    <input type="text"
+                                       id="OZEL_KOD"
+                                       class="form-control phone-mask"
+                                       value="@item.OZEL_KOD"
+                                       aria-label="658 799 8941"
+                                       aria-describedby="basic-icon-default-phone2" />
                                 </div>
                             </div>
-                            <!-- end Status -->
-                        </div> <!-- end col -->
-
-                        <div class="col-md-6">
-                            <!-- Priority -->
-                            <label class="mt-2 mb-1">Priority :</label>
-                            <div class="row">
-                                <div class="col-auto">
-                                    <select class="form-select form-select-sm">
-                                        <option>Low</option>
-                                        <option selected>Medium</option>
-                                        <option>High</option>
-                                    </select>
+                        </div>
+                        <div class="row mb-3">
+                            <label class="col-sm-2 form-label" for="basic-icon-default-message">Message</label>
+                            <div class="col-sm-10">
+                                <div class="input-group input-group-merge">
+                                    <span id="basic-icon-default-message2" class="input-group-text">
+                                        <i class="bx bx-comment"></i>
+                                    </span>
+                                    <textarea id="basic-icon-default-message"
+                                          class="form-control"
+                                          value="Hi, Do you have a moment to talk Joe?"
+                                          aria-label="Hi, Do you have a moment to talk Joe?"
+                                          aria-describedby="basic-icon-default-message2"></textarea>
                                 </div>
                             </div>
-                            <!-- end Priority -->
-                        </div> <!-- end col -->
-                    </div> <!-- end row -->
-
-                    <label class="mt-4 mb-1">Overview :</label>
-
-                    <p class="text-muted mb-0">
-                        This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up.
-                    </p>
-
-                </div> <!-- end card-body-->
-
-            </div> <!-- end card-->
-        }
-
+                        </div>
+                        <div class="row justify-content-end">
+                            <div class="col-sm-10">
+                                <button type="button" id="btnUpdate" class="btn btn-danger mb-1" >Personel Güncelle</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
+            
+}
+<!-- Basic Layout & Basic with Icons -->

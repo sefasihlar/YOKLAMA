@@ -10247,11 +10247,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ayyıldız\\Desktop\\YoklamaProjesi\\Yoklama\\Yoklama\\WebUILayer.csproj",
+      "projectUniqueName": "C:\\Users\\ayyıldız\\Desktop\\Development\\YoklamaProjesi\\Yoklama\\Yoklama\\WebUILayer.csproj",
       "projectName": "WebUILayer",
-      "projectPath": "C:\\Users\\ayyıldız\\Desktop\\YoklamaProjesi\\Yoklama\\Yoklama\\WebUILayer.csproj",
+      "projectPath": "C:\\Users\\ayyıldız\\Desktop\\Development\\YoklamaProjesi\\Yoklama\\Yoklama\\WebUILayer.csproj",
       "packagesPath": "C:\\Users\\ayyıldız\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ayyıldız\\Desktop\\YoklamaProjesi\\Yoklama\\Yoklama\\obj\\",
+      "outputPath": "C:\\Users\\ayyıldız\\Desktop\\Development\\YoklamaProjesi\\Yoklama\\Yoklama\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ayyıldız\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -10268,14 +10268,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\ayyıldız\\Desktop\\YoklamaProjesi\\Yoklama\\BusinessLayer\\BusinessLayer.csproj": {
-              "projectPath": "C:\\Users\\ayyıldız\\Desktop\\YoklamaProjesi\\Yoklama\\BusinessLayer\\BusinessLayer.csproj"
+            "C:\\Users\\ayyıldız\\Desktop\\Development\\YoklamaProjesi\\Yoklama\\BusinessLayer\\BusinessLayer.csproj": {
+              "projectPath": "C:\\Users\\ayyıldız\\Desktop\\Development\\YoklamaProjesi\\Yoklama\\BusinessLayer\\BusinessLayer.csproj"
             },
-            "C:\\Users\\ayyıldız\\Desktop\\YoklamaProjesi\\Yoklama\\DataAccessLayer\\DataAccessLayer.csproj": {
-              "projectPath": "C:\\Users\\ayyıldız\\Desktop\\YoklamaProjesi\\Yoklama\\DataAccessLayer\\DataAccessLayer.csproj"
+            "C:\\Users\\ayyıldız\\Desktop\\Development\\YoklamaProjesi\\Yoklama\\DataAccessLayer\\DataAccessLayer.csproj": {
+              "projectPath": "C:\\Users\\ayyıldız\\Desktop\\Development\\YoklamaProjesi\\Yoklama\\DataAccessLayer\\DataAccessLayer.csproj"
             },
-            "C:\\Users\\ayyıldız\\Desktop\\YoklamaProjesi\\Yoklama\\EntityLayer\\EntityLayer.csproj": {
-              "projectPath": "C:\\Users\\ayyıldız\\Desktop\\YoklamaProjesi\\Yoklama\\EntityLayer\\EntityLayer.csproj"
+            "C:\\Users\\ayyıldız\\Desktop\\Development\\YoklamaProjesi\\Yoklama\\EntityLayer\\EntityLayer.csproj": {
+              "projectPath": "C:\\Users\\ayyıldız\\Desktop\\Development\\YoklamaProjesi\\Yoklama\\EntityLayer\\EntityLayer.csproj"
             }
           }
         }

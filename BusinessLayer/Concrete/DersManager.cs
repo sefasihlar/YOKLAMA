@@ -6,11 +6,11 @@ namespace BusinessLayer.Concrete
 {
     public class DersManager : IDersService
     {
-        IDersDal dersDal;
+        IDersDal _dersDal;
 
         public DersManager(IDersDal dersDal)
         {
-            this.dersDal = dersDal;
+            this._dersDal = dersDal;
         }
 
         public void DersAdd(TBL_DERS ders)
@@ -20,22 +20,27 @@ namespace BusinessLayer.Concrete
 
         public List<TBL_DERS> DersList()
         {
-            return dersDal.GetListAll();
+            return _dersDal.GetListAll();
         }
 
+        public List<TBL_DERS> GetWithDersId(int id)
+        {
+            return _dersDal.GetListAll(x => x.DERS_ID == id);
+        }
         public void DersRemove(TBL_DERS ders)
         {
-            throw new NotImplementedException();
+            _dersDal.Delete(ders);
         }
 
         public void DersUpdate(TBL_DERS ders)
         {
-            throw new NotImplementedException();
+            _dersDal.Update(ders);
+            
         }
 
         public TBL_DERS GetById(int id)
         {
-            throw new NotImplementedException();
+            return (TBL_DERS)_dersDal.GetById(id);  
         }
     }
 }

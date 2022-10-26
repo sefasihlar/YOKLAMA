@@ -21,8 +21,9 @@
                         </div>
                     </div><!-- end col-->
                 </div>
-
-                <div class="table-responsive">
+                <div id="DersList">
+                </div>
+                @*<div class="table-responsive">
                     <table class="table table-centered table-nowrap table-striped" id="products-datatable">
                         <thead>
                             <tr>
@@ -81,8 +82,20 @@
 
                         </tbody>
                     </table>
-                </div>
+                </div>*@
+                    @section scripts{
+                    <script>
 
+
+                        @await Html.PartialAsync("PartialDers/CallDers")
+                        @await Html.PartialAsync("PartialDers/AddDers")
+                        @await Html.PartialAsync("PartialDers/ListDers")
+                        @await Html.PartialAsync("PartialDers/DeleteDers")
+                 
+
+
+                    </script>
+                }
                 <ul class="pagination pagination-rounded justify-content-end mb-0">
                     <li class="page-item">
                         <a class="page-link" href="javascript: void(0);" aria-label="Previous">

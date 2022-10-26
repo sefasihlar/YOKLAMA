@@ -1,0 +1,20 @@
+﻿  $("#btnUpdate").click(function(){
+
+            let update = {
+                IDARI_DERS_ID: $("#DERS_ID").val(),
+                ADI: $("#ADI").val(),
+                DURUM:$("#DURUM").val(),
+                OZEL_KOD:$("#OZEL_KOD").val()
+
+            };
+            console.log(update);
+            $.ajax({
+                type: "post",
+                url: "/Ders/AjaxDersUpdate/",
+                data: update,
+                success: function (func) {
+                    alert("update işlemi başarılı bir şekilde gerçekleşti");
+                    console.log(func);
+                }
+            });
+        });

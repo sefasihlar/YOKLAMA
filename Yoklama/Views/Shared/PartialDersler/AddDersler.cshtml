@@ -1,0 +1,20 @@
+﻿
+        $("#btnAdd").click(function () {
+            let dersler = {
+                ADI: $("#ADI").val(),
+                DURUM: $("#DURUM").val(),
+                OZEL_KOD: $("#OZEL_KOD").val(),
+
+            };
+            $.ajax({
+                type: "Post",
+                url: "/Dersler/AjaxDerslerAdd/",
+                data: dersler,
+                success: function (func) {
+                    let result = jQuery.parseJSON(func);
+                    alert("Ekleme işlemi başarılı bir şekilde gerçekleşti");
+                    console.log(func);
+                }
+            });
+        });
+

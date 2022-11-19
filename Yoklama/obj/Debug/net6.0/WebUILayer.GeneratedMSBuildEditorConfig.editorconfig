@@ -27,6 +27,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVyc2xlclxBbGxMaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/ayyıldız/Desktop/Development/YoklamaProjesi/Yoklama/Yoklama/Views/Dersler/DerslerAdd.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVyc2xlclxEZXJzbGVyQWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ayyıldız/Desktop/Development/YoklamaProjesi/Yoklama/Yoklama/Views/Dersler/DerslerDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVyc2xlclxEZXJzbGVyRGV0YWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/ayyıldız/Desktop/Development/YoklamaProjesi/Yoklama/Yoklama/Views/Ders/AllList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVyc1xBbGxMaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -73,6 +81,22 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/ayyıldız/Desktop/Development/YoklamaProjesi/Yoklama/Yoklama/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ayyıldız/Desktop/Development/YoklamaProjesi/Yoklama/Yoklama/Views/Shared/PartialDersler/AddDersler.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFBhcnRpYWxEZXJzbGVyXEFkZERlcnNsZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ayyıldız/Desktop/Development/YoklamaProjesi/Yoklama/Yoklama/Views/Shared/PartialDersler/DeleteDersler.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFBhcnRpYWxEZXJzbGVyXERlbGV0ZURlcnNsZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ayyıldız/Desktop/Development/YoklamaProjesi/Yoklama/Yoklama/Views/Shared/PartialDersler/ListDersler.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFBhcnRpYWxEZXJzbGVyXExpc3REZXJzbGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ayyıldız/Desktop/Development/YoklamaProjesi/Yoklama/Yoklama/Views/Shared/PartialDersler/UpdateDersler.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFBhcnRpYWxEZXJzbGVyXFVwZGF0ZURlcnNsZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/ayyıldız/Desktop/Development/YoklamaProjesi/Yoklama/Yoklama/Views/Shared/PartialOgretmen/AddPersonel.cshtml]

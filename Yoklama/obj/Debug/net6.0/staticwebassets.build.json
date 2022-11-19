@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "2wVbn/MJJXYsx+vIgiOLYEOlOCPsdJ4u/VoBKtJf4DI=",
+  "Hash": "jgAPWjojigzbD2tf2QkukCsZeTklo3+aE03t9WHGPo4=",
   "Source": "WebUILayer",
   "BasePath": "_content/WebUILayer",
   "Mode": "Default",
@@ -1105,23 +1105,6 @@
       "OriginalItemSpec": "wwwroot\\yoklama\\assets\\img\\avatars\\1 (2).png"
     },
     {
-      "Identity": "C:\\Users\\ayyıldız\\Desktop\\Development\\YoklamaProjesi\\Yoklama\\Yoklama\\wwwroot\\yoklama\\assets\\img\\avatars\\1.png",
-      "SourceId": "WebUILayer",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\ayyıldız\\Desktop\\Development\\YoklamaProjesi\\Yoklama\\Yoklama\\wwwroot\\",
-      "BasePath": "_content/WebUILayer",
-      "RelativePath": "yoklama/assets/img/avatars/1.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\yoklama\\assets\\img\\avatars\\1.png"
-    },
-    {
       "Identity": "C:\\Users\\ayyıldız\\Desktop\\Development\\YoklamaProjesi\\Yoklama\\Yoklama\\wwwroot\\yoklama\\assets\\img\\avatars\\5.png",
       "SourceId": "WebUILayer",
       "SourceType": "Discovered",
@@ -1171,6 +1154,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\yoklama\\assets\\img\\avatars\\7.png"
+    },
+    {
+      "Identity": "C:\\Users\\ayyıldız\\Desktop\\Development\\YoklamaProjesi\\Yoklama\\Yoklama\\wwwroot\\yoklama\\assets\\img\\avatars\\sefa.png",
+      "SourceId": "WebUILayer",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ayyıldız\\Desktop\\Development\\YoklamaProjesi\\Yoklama\\Yoklama\\wwwroot\\",
+      "BasePath": "_content/WebUILayer",
+      "RelativePath": "yoklama/assets/img/avatars/sefa.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\yoklama\\assets\\img\\avatars\\sefa.png"
     },
     {
       "Identity": "C:\\Users\\ayyıldız\\Desktop\\Development\\YoklamaProjesi\\Yoklama\\Yoklama\\wwwroot\\yoklama\\assets\\img\\backgrounds\\18.jpg",
